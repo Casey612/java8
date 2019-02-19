@@ -1,6 +1,6 @@
 package java8.ch01;
 
-import org.springframework.util.Assert;
+import org.junit.Assert;
 
 import java.io.File;
 import java.util.Arrays;
@@ -34,7 +34,7 @@ public class Lambda {
         File home = new File("/home/yuzhe");
         File[] files1 = home.listFiles(dir -> dir.isDirectory());
         File[] files2 = home.listFiles(File::isDirectory);
-        Assert.isTrue(files1.length == files2.length);
+        Assert.assertEquals(files1.length, files2.length);
     }
 
 

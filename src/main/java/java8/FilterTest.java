@@ -1,6 +1,6 @@
 package java8;
 
-import org.apache.parquet.Strings;
+import com.google.common.base.Strings;
 
 import java.util.Arrays;
 import java.util.List;
